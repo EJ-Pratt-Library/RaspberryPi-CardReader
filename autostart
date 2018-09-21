@@ -1,0 +1,9 @@
+#place in /home/pi/.config/lxsession/LXDE-pi
+#or use sudo crontab -e and run the program on startup
+
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@point-rpi
+
+@lxterminal -e /usr/bin/python /home/pi/Desktop/autostart.py
